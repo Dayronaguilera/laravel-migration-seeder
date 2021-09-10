@@ -19,7 +19,7 @@ class CreateTripsTable extends Migration
             $table->string('paese',200);
             $table->string('citta',200);
             $table->date('partenza');
-            $table->tinyInteger('prezzo');
+            $table->unsignedBigInteger('prezzo');
             $table->timestamps();
         });
     }
